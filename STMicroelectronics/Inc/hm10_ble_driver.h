@@ -745,18 +745,18 @@ HM10_Status set_hm10_role(HM10_Role ble_role);
  */
 HM10_Status get_hm10_role(HM10_Role *ble_role);
 
-/**@brief	Sends a Set Pin Command to the HM-10 BT Device and sets a desired BT Pin to that Device.
+/**@brief	Sends a Set Pass Command to the HM-10 BT Device and sets a desired BT Pin to that Device.
  *
  * @param[in] pin	Pointer to the ASCII Code data representing the desired BT Pin that wants to be given to the HM-10
  *                  BT Device. This pin data must consist of exactly @ref HM10_PIN_VALUE_SIZE bytes of data, where each
  *                  byte must stand for any number character in ASCII Code.
  *
- * @retval	HM10_EC_OK	if the Pin Command was successfully sent to the HM-10 BT Device and if the Pin Response was
+ * @retval	HM10_EC_OK	if the Pass Command was successfully sent to the HM-10 BT Device and if the Pass Response was
  *                      received from it subsequently.
  * @retval  HM10_EC_NR  if there was no response from the HM-10 BT Device.
  * @retval  HM10_EC_ERR <ul>
  *                          <li>
- *                              If, after sending the Pin Command, the validation of the expected Pin Response from the
+ *                              If, after sending the Pass Command, the validation of the expected Pass Response from the
  *                              HM-10 BT Device was unsuccessful.
  *                          </li>
  *                          <li>
@@ -773,7 +773,7 @@ HM10_Status get_hm10_role(HM10_Role *ble_role);
  */
 HM10_Status set_hm10_pin(uint8_t *pin);
 
-/**@brief	Sends a Get Pin Command to the HM-10 BT Device and gets the Pin of that Device.
+/**@brief	Sends a Get Pass Command to the HM-10 BT Device and gets the Pin of that Device.
  *
  * @param[out] pin	Pointer to the ASCII Code data representing the received BT Pin from the HM-10 BT Device.
  *                  This pin data consists of a size of exactly @ref HM10_PIN_VALUE_SIZE bytes, where each byte must
@@ -784,7 +784,7 @@ HM10_Status set_hm10_pin(uint8_t *pin);
  * @retval  HM10_EC_NR  if there was no response from the HM-10 BT Device.
  * @retval  HM10_EC_ERR <ul>
  *                          <li>
- *                              If, after sending the Get Pin Command, the validation of the expected Get Pin Response
+ *                              If, after sending the Get Pass Command, the validation of the expected Get Pass Response
  *                              from the HM-10 BT Device was unsuccessful.
  *                          </li>
  *                          <li>
