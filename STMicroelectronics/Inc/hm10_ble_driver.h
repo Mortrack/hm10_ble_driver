@@ -446,6 +446,7 @@
  *
  * @author 	Cesar Miranda Meza (cmirandameza3@hotmail.com)
  * @date	December 12, 2023.
+ * @date    LAST UPDATE: June 21, 2024.
  */
 
 #ifndef HM10_BLE_DRIVER_H_
