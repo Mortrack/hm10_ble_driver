@@ -1,5 +1,7 @@
 # HM-10 Bluetooth Module C driver library
 
+Version: 1.0.0.2
+
 This repository provides the library with the required the definitions, variables and functions so that its implementer
 can use and communicate with an HM-10 Bluetooth Device, but in two different versions: 1) For using it from either a
 microcontroller or a microprocessor of the STMicroelectronics device family and, in particular, via the STM32CubeIDE
